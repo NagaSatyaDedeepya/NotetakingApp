@@ -38,6 +38,10 @@
             var regUsername = document.getElementById("regUsername").value;
             var regEmail = document.getElementById("regEmail").value;
             var regPassword = document.getElementById("regPassword").value;
+            if (regUsername === "" || regEmail === "" || regPassword === "") {
+                alert("Please fill in all fields.");
+                return;
+            }
 
             var userData = {
                 username: regUsername,
